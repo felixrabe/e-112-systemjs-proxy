@@ -24,3 +24,7 @@ Expected output:
     wrappedProxyUseDefault: world
     proxy: world
     proxyUseDefault: world
+
+`./indexWithImportWorkaround.js` shows how to patch `SystemJS.import` to solve
+the issue, while `./indexWithProxyFix.js` adds a `then` property to the
+proxied object to solve the issue.
